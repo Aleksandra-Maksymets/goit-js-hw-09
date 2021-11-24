@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #212121;
   line-height: 1.5;
-  background-color: rgb(48, 166, 182);
+  background-color: #fafafa;
 }
 
 img {
@@ -17,6 +17,11 @@ img {
   max-width: 100%;
 }
 
+.main {
+  background-color: rgb(48, 166, 182);
+  width: 100vw;
+  height: 100vh;
+}
 .container {
   margin-top: 80px;
   display: flex;
