@@ -13,12 +13,12 @@ function onBtnSubmitClick(evt) {
   const { delay, step, amount } = evt.currentTarget;
 
   let currentDelay = Number(delay.value);
-  const stepNumber = Number(step.value);
+  const steps = Number(step.value);
   const promisesQuantity = Number(amount.value);
 
   for (let i = 1; i <= promisesQuantity; i++) {
     createPromise(i, currentDelay).then(onResolved).catch(onRejected);
-    currentDelay += stepNumber;
+    currentDelay += steps;
   }
 }
 
