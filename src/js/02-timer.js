@@ -23,7 +23,6 @@ refs.startBtn.disabled = true;
 // Adding EventListeners
 refs.startBtn.addEventListener('click', onStartBtnClick);
 refs.resetBtn.addEventListener('click', onResetBtnClick);
-refs.datePicker.addEventListener('click', onResetBtnClick);
 
 // Options settings for flatpickr date-selector
 const options = {
