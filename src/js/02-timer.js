@@ -47,6 +47,7 @@ const options = {
 
 flatpickr('#datetime-picker', options);
 
+// Event handlers
 function onStartBtnClick() {
   timerId = setInterval(() => {
     if (pickedDate <= Date.now()) return;
@@ -69,6 +70,7 @@ function onResetBtnClick() {
   refs.days.textContent = '00';
 }
 
+// Functions helpers
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
